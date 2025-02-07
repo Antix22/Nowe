@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build and Deploy1
 on: 
   push:
     branches:
@@ -45,5 +45,5 @@ jobs:
             mvn clean package
             docker build --rm -t spring-mongodb-image .
             docker compose up -d --build
- 
+            
  
